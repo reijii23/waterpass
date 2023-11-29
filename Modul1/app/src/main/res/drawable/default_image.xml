@@ -1,0 +1,5 @@
+<!-- res/drawable/default_image.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#CCCCCC" /> <!-- Set the desired color -->
+    <size android:width="48dp" android:height="48dp" /> <!-- Set the desired size -->
+</shape>

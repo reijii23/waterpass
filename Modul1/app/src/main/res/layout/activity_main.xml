@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <FrameLayout
+        android:id="@+id/horizontalLine"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#dddddd" />
+
+    <!-- Vertical Line -->
+    <FrameLayout
+        android:id="@+id/verticalLine"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#dddddd" />
+
+    <!-- Circle in the Center of Horizontal Line -->
+    <ImageView
+        android:id="@+id/circleHorizontal"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circle_background" />
+
+    <!-- Circle in the Center of Vertical Line -->
+    <ImageView
+        android:id="@+id/circleVertical"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/circle_background" />
+
+    <!-- Group of TextViews in the Center -->
+    <LinearLayout
+        android:id="@+id/textViewGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textAzimuth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Azimuth: " />
+
+        <TextView
+            android:id="@+id/textPitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pitch: " />
+
+        <TextView
+            android:id="@+id/textRoll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roll: " />
+
+    </LinearLayout>
+
+    <!-- FrameLayout to hold the CustomView -->
+    <FrameLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</RelativeLayout>

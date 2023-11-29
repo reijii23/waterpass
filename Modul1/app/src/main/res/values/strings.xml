@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Modul1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="second_fragment_text">second fragment\n</string>
+    <string name="openDrawer">buka</string>
+    <string name="closeDrawer">tutup\n</string>
+</resources>
